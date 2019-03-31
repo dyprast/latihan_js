@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link rel="stylesheet" href="assets/css/form.css">
+</head>
+<body>
+	<div class="container">
+		<div class="form">
+			<div class="form-group">
+				<label for="name-input">Name</label>
+				<input type="text" id="name-input" placeholder="What's your name?" class="form-control">
+			</div> 
+			<div class="form-group">
+				<label for="class-input">Class</label>
+				<select id="class-input" class="form-control">
+					<option value="">Select class</option>
+					<option value="X RPL">X RPL</option>
+					<option value="XI RPL">XI RPL</option>
+					<option value="XII RPL">XII RPL</option>		
+				</select>
+			</div>
+			<div class="form-group">
+				<div class="form-subtitle">
+					Gender
+				</div>
+				<div class="form-inline">
+					<div class="form-check">
+						<input type="radio" name="gender" id="radio-male" value="Male">
+						<label for="radio-male">Male</label>
+					</div>
+					<div class="form-check">
+						<input type="radio" name="gender" id="radio-female" value="Female">
+						<label for="radio-female">Female</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="form-check">
+					<input type="checkbox" name="agree_items" id="cb-terms" value="1">
+					<label for="cb-temrs">I agree to the terms and coditions</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<button type="submit" id="btn" class="btn">Submit</button>
+			</div>
+			<div class="form-result">
+				<div>
+					Name : <span id="result-name"></span>
+				</div>
+				<div>
+					Class : <span id="result-class"></span>
+				</div>
+				<div>
+					Gender : <span id="result-gender"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/form.js"></script>
+</body>
+</html>

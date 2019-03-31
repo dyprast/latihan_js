@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript Variable</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// Primitive data type 
+		var name = 'Romadhan'; //String
+		var age = 15; // Number
+		var isMarried = false; // boolean
+		var brotherName; //Undefined
+		var motherName = null; //Null
+
+		//Non primitive (reference) data type
+		var friends = ['Agus', 'Iqbal', 'Cecep', 'Rohman', 'Rohim']; //Array
+		var numbers = [1, 3.14, -10, -100.9]; //Array
+		var school = { //Object
+			name : 'SMK Negeri 10 Jakarta',
+			address : 'Jl. SMEA 6',
+			age : 51
+		};
+		var mixArray = [19, 'Banana', school,true]; //Array
+
+		console.log(name);
+		console.log(age);
+		console.log(isMarried);
+		console.log(brotherName);
+		console.log(motherName);
+		console.log(friends);
+		for (var i = 0; i < friends.length; i++) {
+			console.log(friends[i]);
+		}
+		console.log(numbers);
+		for(var i = 0; i <numbers.length; i++){
+			console.log(numbers[i]);
+		}
+		console.log(school);
+		console.log(school.name);
+		console.log(school.address);
+		console.log(school.age);
+		console.log(mixArray);
+		for (var i = 0; i < mixArray.length; i++) {
+			console.log(mixArray[i]);
+		}
+		console.log(mixArray[1]);
+	</script>
+</body>
+</html>
